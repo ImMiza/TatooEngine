@@ -1,6 +1,6 @@
-package com.tatooengine;
+package com.engine.gamemain;
 
-import com.tatooengine.utils.TatooLog;
+import com.engine.utils.TatooLog;
 
 public class TatooGame { //Main class to import in the main class of your game
 	
