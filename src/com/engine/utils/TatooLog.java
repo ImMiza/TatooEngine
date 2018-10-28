@@ -1,5 +1,6 @@
 package com.engine.utils;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,7 +19,7 @@ public class TatooLog { //class pour la gestion des logs
 	}
 	
 	private String getDate() {
-		return new SimpleDateFormat("dd/MM/yyyy':'hh:mm:ss").format(new Date());
+		return new SimpleDateFormat("dd-MM-yyyy'|'hh:mm:ss").format(new Date());
 	}
 	
 	public void dispatch(String log) { //afficher une log avec une date
@@ -41,8 +42,8 @@ public class TatooLog { //class pour la gestion des logs
 		return logs;
 	}
 	
-	public void printLog() { //TODO imprimer les log dans un fichier texte
-		
+	public void printLog() { //imprimer les log dans un fichier texte
+		new FileManager(new File("./log/"+getDate()+".txt")).printList(getLogs());
 	}
 
 }
