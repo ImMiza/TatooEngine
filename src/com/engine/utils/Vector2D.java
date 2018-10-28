@@ -163,6 +163,13 @@ public class Vector2D {
         x = -x;
         y = -y;
     }
+    
+    public boolean isZero() {
+    	if(this.x == 0.0 && this.y == 0.0)
+    		return true;
+    	else
+    		return false;
+    }
 
     @Override
     public Vector2D clone() {

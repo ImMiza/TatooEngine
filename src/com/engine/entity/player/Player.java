@@ -17,6 +17,7 @@ public class Player extends Entity{
 		
 		private boolean invulnerable;
 		private boolean dead;
+		private boolean move;
 
 		/*
 		 * Class pour le joueur, qui est le joueur pricipal
@@ -36,6 +37,7 @@ public class Player extends Entity{
 			
 			this.invulnerable = false;
 			this.dead = false;
+			this.move = true;
 		}
 		
 		public Player(String name) {
@@ -51,6 +53,7 @@ public class Player extends Entity{
 			
 			this.invulnerable = false;
 			this.dead = false;
+			this.move = true;
 		}
 		
 		public Player(String name, int defaultHealth) {
@@ -66,6 +69,7 @@ public class Player extends Entity{
 			
 			this.invulnerable = false;
 			this.dead = false;
+			this.move = true;
 		}
 		
 		@Override
@@ -185,6 +189,16 @@ public class Player extends Entity{
 		@Override
 		public void setDead(boolean dead) {
 			this.dead = dead;
+		}
+
+		@Override
+		public void move(boolean move) {
+			this.move = move;
+		}
+
+		@Override
+		public boolean canMove() {
+			return this.move;
 		}
 
 

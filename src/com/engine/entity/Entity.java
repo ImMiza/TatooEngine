@@ -63,4 +63,8 @@ public abstract class Entity {
 	public abstract void setDead(boolean dead);
 
 	
+	public abstract void move(boolean move);
+	
+	
+	public abstract boolean canMove();
 }
