@@ -1,1 +1,1 @@
-[[{"location":"/lib/java","type":"JRE","hints":{"EXECUTION_ENVIRONMENT":"JavaSE-1.8"}},"jre:jre:1.8.0"],[{"location":"/home/aymeric/prog/java/workspace/TatooEngine/TatooEngine","type":"PROJECT","hints":{"PROJECT_NAME":"TatooEngine"}},"ABSENT"]]
+[[{"location":"/home/aymeric/prog/java/workspace/TatooEngine/TatooEngine","type":"PROJECT","hints":{"PROJECT_NAME":"TatooEngine"}},"ABSENT"],[{"location":"/lib/java","type":"JRE","hints":{"EXECUTION_ENVIRONMENT":"JavaSE-1.8"}},"jre:jre:1.8.0"]]
