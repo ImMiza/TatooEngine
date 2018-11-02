@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.engine.gamemain.TatooGame;
 
 public class FileManager {
 	
@@ -18,11 +17,12 @@ public class FileManager {
 	public FileManager(File file) {
 		this.file = file;
 		
-		if(!file.exists()) {
-			TatooGame.getMainTatooLog().dispatch("Generate file: "+file.getPath());
-			
-			new File(file.getParentFile().getPath()).mkdirs();
-			
+		if(!this.file.getParentFile().exists()) {
+			this.file.getParentFile().mkdirs();
+		}
+		
+		if(!this.file.exists()) {
+				
 			try {
 				
 				file.createNewFile();
