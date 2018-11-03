@@ -200,6 +200,13 @@ public class Player extends Entity{
 		public boolean canMove() {
 			return this.move;
 		}
+		
+		public void teleport(Location location) {
+			this.location.setX(location.getX());
+			this.location.setY(location.getY());
+			this.location.setDirection(location.getDirection());
+			this.location.setVector(location.getVector());
+		}
 
 
 }

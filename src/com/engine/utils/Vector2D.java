@@ -190,7 +190,7 @@ public class Vector2D {
 
     @Override
     public String toString() {
-        return "Vector2d[" + x + ", " + y + "]";
+        return "Vector2D[" + x + ", " + y + "]";
 }
 
 	public double getX() {

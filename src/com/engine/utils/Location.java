@@ -8,8 +8,7 @@ public class Location {
 	private double y;
 	private Direction direction;
 	private Vector2D vector;
-	
-	
+
 	public Location(double x, double y) {
 		this.x = x;
 		this.y = y;
@@ -47,5 +46,26 @@ public class Location {
 
 	public void setVector(Vector2D vector) {
 		this.vector = vector;
+	}
+
+	@Override
+	public String toString() {
+		return 	"X: " + getX() + "\n" + 
+				"Y: " + getY() + "\n" + 
+				"Direction: " + getDirection() + "\n" + 
+				"Vecteur: " + getVector().toString();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == this) {
+			return true;
+		}
+		if (obj instanceof Location) {
+			Location loc = (Location) obj;
+			return (this.getX() == loc.getX()) && (this.getY() == loc.getY())
+					&& (this.getDirection() == loc.getDirection()) && (this.getVector().equals(loc.getVector()));
+		}
+		return false;
 	}
 }
