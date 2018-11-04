@@ -4,9 +4,8 @@ import com.engine.events.manager.EventManager;
 import com.engine.graphics.Window;
 import com.engine.utils.TatooLog;
 import com.engine.utils.remote.RemoteControl;
-import com.sun.tools.javac.Main;
 
-public class TatooGame extends Main{ //Main class to import in the main class of your game
+public class TatooGame{ //Main class to import in the main class of your game
 	
 	final static private boolean DEBUG = true;
 	
