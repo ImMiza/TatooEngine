@@ -19,13 +19,23 @@ public abstract class Entity {
 
 
 	public abstract void setDamage(double damage);
-
+	
 
 	public abstract double getSpeed();
 
-
 	public abstract void setSpeed(double speed);
+	
+	public abstract void setMaxSpeed(double maxSpeed);
+	
+	public abstract double getMaxSpeed();
+	
+	public abstract void setVelocity(double velocity);
 
+	public abstract double getVelocity();
+	
+	public abstract void setMaxVelocity(double maxVelocity);
+	
+	public abstract double getMaxVelocity();
 	
 	public abstract double getMaxHealth();
 

@@ -13,6 +13,9 @@ public class Player extends Entity{
 		private Location location;
 		private double damage;
 		private double speed;
+		private double maxSpeed;
+		private double velocity;
+		private double maxVelocity;
 		
 		
 		private boolean invulnerable;
@@ -20,7 +23,7 @@ public class Player extends Entity{
 		private boolean move;
 
 		/*
-		 * Class pour le joueur, qui est le joueur pricipal
+		 * Class pour le joueur, qui est le joueur principal
 		 * est pilotable du jeu
 		 */
 
@@ -206,6 +209,36 @@ public class Player extends Entity{
 			this.location.setY(location.getY());
 			this.location.setDirection(location.getDirection());
 			this.location.setVector(location.getVector());
+		}
+
+		@Override
+		public void setMaxSpeed(double maxSpeed) {
+			this.maxSpeed = maxSpeed;
+		}
+
+		@Override
+		public double getMaxSpeed() {
+			return this.maxSpeed;
+		}
+
+		@Override
+		public void setVelocity(double velocity) {
+			this.velocity = velocity;
+		}
+
+		@Override
+		public double getVelocity() {
+			return this.velocity;
+		}
+
+		@Override
+		public void setMaxVelocity(double maxVelocity) {
+			this.maxVelocity = maxVelocity;
+		}
+
+		@Override
+		public double getMaxVelocity() {
+			return this.maxVelocity;
 		}
 
 
